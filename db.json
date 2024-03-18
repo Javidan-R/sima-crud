@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "Cavidan ",
+      "phone": "+994775878588",
+      "email": "recebli.cavidan@gmail.com",
+      "age": "1990-01-01",
+      "address": "efeü",
+      "country": "azerbaijan",
+      "gender": "female",
+      "id": "034c"
+    },
+    {
+      "name": "Cavidan ",
+      "phone": "507488901",
+      "image": "C:\\fakepath\\Notification.svg",
+      "email": "recebli.cavidan@gmail.com",
+      "age": "1990-02-03",
+      "address": "efeü",
+      "country": "turkey",
+      "gender": "female",
+      "id": "81e1"
+    },
+    {
+      "name": "Cavidan ",
+      "phone": "507488901",
+      "image": "C:\\fakepath\\Notification.svg",
+      "email": "recebli.cavidan@gmail.com",
+      "age": "1990-01-01",
+      "address": "efeü",
+      "country": "turkey",
+      "gender": "female",
+      "id": "ad01"
+    }
+  ]
+}
