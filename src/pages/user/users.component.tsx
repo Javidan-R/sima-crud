@@ -3,13 +3,14 @@ import { Table, Button, Dropdown, Menu, Modal, Skeleton } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import useLocalization from "assets/lang";
 import { successToast, errorToast } from "core/shared/toast/toast";
-import EditUserForm from "pages/form/component/edit-form.component";
-import { useDeleteUser, useGetUser } from "./actions/users.query";
+import EditUserForm from "pages/form/edit-form/edit-form.component";
+import { useGetUser } from "./actions/users.query";
 import { generateGuid } from "core/helpers/generate-guid";
 import UserModel from "./models/user.models";
+import { useDeleteUser } from "./actions/user.mutation";
 
 const UserComponent = () => {
-  const { data, isLoading, refetch } = useGetUser();
+  const { data, isLoading } = useGetUser();
   const translate = useLocalization();
   const [isEditModalVisible, setIsEditModalVisible] = useState(false);
   const [selectedUser, setSelectedUser] = useState<UserModel | null>(null);
@@ -19,7 +20,6 @@ const UserComponent = () => {
     try {
       await deleteUserMutation.mutateAsync(id);
       successToast(translate("toast_delete"));
-      refetch();
     } catch (error) {
       errorToast(translate("toast_error"));
     }

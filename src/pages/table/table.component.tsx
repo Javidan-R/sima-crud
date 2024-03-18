@@ -6,7 +6,7 @@ import useTableStyles from "./table.style";
 import { useDeletePostMutation, usePosts } from "./actions/table.query";
 
 function TableComponent() {
-  const { data, isLoading, refetch } = usePosts();
+  const { data, isLoading } = usePosts();
   const deletePostMutation = useDeletePostMutation();
   const translate = useLocalization();
   const classes = useTableStyles();
@@ -14,7 +14,6 @@ function TableComponent() {
     try {
       await deletePostMutation.mutateAsync(id);
       successToast(translate("toast_delete"));
-      refetch();
     } catch (error) {
       errorToast(translate("toast_error"));
     }

@@ -9,3 +9,9 @@ export interface IFormValues {
     language: string;
     languages: string[];
 }
+
+export interface EditUserFormProps {
+    user: IUser;
+    onSuccess: () => void;
+  }
+  

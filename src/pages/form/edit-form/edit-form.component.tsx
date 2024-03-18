@@ -2,18 +2,13 @@ import React from "react";
 import { Form, Input, Button, Select } from "antd";
 import useLocalization from "assets/lang";
 import { successToast, errorToast } from "core/shared/toast/toast";
-import { useUpdateUser } from "pages/user/actions/users.query";
 import { useNavigate } from "react-router-dom";
 import { Routes } from "router/routes";
-
-const { Option } = Select;
-
-interface EditUserFormProps {
-  user: IUser;
-  onSuccess: () => void;
-}
+import { EditUserFormProps } from "../form";
+import { useUpdateUser } from "pages/user/actions/user.mutation";
 
 const EditUserForm: React.FC<EditUserFormProps> = ({ user, onSuccess }) => {
+  const { Option } = Select;
   const [form] = Form.useForm();
   const navigate = useNavigate();
   const { mutate: updateUser, isLoading } = useUpdateUser();
@@ -51,13 +46,6 @@ const EditUserForm: React.FC<EditUserFormProps> = ({ user, onSuccess }) => {
       >
         <Input placeholder={translate("phone_placeholder")} /> 
       </Form.Item>
-      {/* <Form.Item
-        name="image"
-        label={translate("image")}
-        rules={[{ required: true, message: translate("input_required") }]}
-      >
-        <Input type="file" />
-      </Form.Item> */}
       <Form.Item
         name="email"
         label={translate("email")}
