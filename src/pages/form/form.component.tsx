@@ -24,12 +24,49 @@ const FormComponent = () => {
 
   const rules = useMemo(
     () => ({
-      name: [{ required: true, message: translate("input_required") }],
-      email: [{ required: true, message: translate("input_required") }],
-      age: [{ required: true, message: translate("input_required") }],
-      phone: [{ required: true, message: translate("input_required") }],
+      name: [
+        {
+          required: true,
+          message: translate("input_required"),
+        },
+      ],
+      email: [
+        {
+          required: true,
+          message: translate("input_required"),
+        },
+        {
+          // add a pattern for email regex
+          pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+          message: translate("email_invalid"),
+        },
+      ],
+      age: [
+        {
+          required: true,
+          message: translate("input_required"),
+        },
+      ],
+      phone: [
+        {
+          required: true,
+          message: translate("input_required"),
+        },
+        {
+          pattern: /^\+994[0-9]{9}$/,
+          message: translate("phone_invalid_format"),
+        },
+      ],
       image: [{ required: true, message: translate("input_required") }],
-      address: [{ required: true, message: translate("input_required") }],
+      address: [
+        { required: true, message: translate("input_required") },
+        {
+          min: 8,
+          message: translate("input_min_length", {
+            min: <span style={{ color: "green" }}>8</span>,
+          }),
+        },
+      ],
       country: [{ required: true, message: translate("select_country") }],
       gender: [{ required: true, message: translate("select_gender") }],
     }),
@@ -66,7 +103,7 @@ const FormComponent = () => {
       onFinish={onSubmit}
       layout="vertical"
       className={classes.testDiv}
-      encType="multipart/form-data" 
+      encType="multipart/form-data"
     >
       <h2> {translate("user_info_form_title")} </h2>
       <div className="row">
@@ -111,7 +148,7 @@ const FormComponent = () => {
             name="image"
             label={translate("image")}
           >
-            <Input type="file" name="imge"  />
+            <Input type="file" name="imge" />
           </Form.Item>
         </div>
         <div className="col-lg-6">
@@ -122,7 +159,11 @@ const FormComponent = () => {
           >
             <Select placeholder={translate("select_country")}>
               {countryOptions.map((option) => (
-                <Select.Option key={option.value} showSearch value={option.value}>
+                <Select.Option
+                  key={option.value}
+                  showSearch
+                  value={option.value}
+                >
                   {option.label}
                 </Select.Option>
               ))}
@@ -137,7 +178,7 @@ const FormComponent = () => {
             name="gender"
             label={translate("gender")}
           >
-            <Radio.Group options={genderOptions}  />
+            <Radio.Group options={genderOptions} />
           </Form.Item>
         </div>
         <div className="col-lg-6">
@@ -152,7 +193,7 @@ const FormComponent = () => {
       </div>
       <div className="row mt-20">
         <div className="col-lg-3">
-          <Button loading={isLoading} htmlType="reset" className="w-100 " >
+          <Button loading={isLoading} htmlType="reset" className="w-100 ">
             {translate("reset")}
           </Button>
         </div>

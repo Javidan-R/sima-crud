@@ -2,7 +2,7 @@
   "users": [
     {
       "name": "Cavidan ",
-      "phone": "+994775878588",
+      "phone": "+994775878588r",
       "email": "recebli.cavidan@gmail.com",
       "age": "1990-01-01",
       "address": "efeüopj ",
@@ -42,6 +42,45 @@
       "country": "turkey",
       "gender": "female",
       "address": "https://github.com/Javidan-R/sima-crud"
+    },
+    {
+      "id": "bde9",
+      "name": "Cavidan Recebli",
+      "email": "recebli.cavidan@gmail.com",
+      "age": "2024-02-29",
+      "phone": "775878588",
+      "image": "C:\\fakepath\\Promote.svg",
+      "country": "turkey",
+      "gender": "male",
+      "address": "egeü"
+    },
+    {
+      "id": "8f62",
+      "name": "Cavidan Recebli",
+      "email": "recebli.cavidan@gmail.com",
+      "age": "2024-02-28",
+      "phone": "+994775878588",
+      "image": "C:\\fakepath\\Profile.svg",
+      "country": "turkey",
+      "gender": "female",
+      "address": "üefüesfeü eüf"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1c52",
+      "email": "recebli.cacidan@gmail.com",
+      "password": "wr23r23"
+    },
+    {
+      "id": "9b33",
+      "email": "wedwqd@gmail.com",
+      "password": "12313"
+    },
+    {
+      "id": "8d3b",
+      "email": "receb@gmail.com",
+      "password": "1234"
     }
   ]
 }

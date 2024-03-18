@@ -58,6 +58,7 @@ export const az = {
     reset: 'Yenilə',
     form_submit: 'Məlumatlarınız müvəfəqiyyətlə göndərildi',
     user_info_form_title: 'İstifadəçi məlumat forması ',
+    phone_invalid_format: "Telefon nömrəsi düzgün formatda deyil. Telefon nömrəsi +994 ilə başlamalı və 9 rəqəmli olmalıdır.",
     
     // Yenilənəcək olan məzmunu əlavə edin
     select_country: 'Ölkəni seçin',
