@@ -117,6 +117,7 @@ const UserComponent = () => {
             columns={columns}
             rowKey={generateGuid}
             loading={isLoading}
+            scroll={{ x: true }} 
           />
           <Modal
             visible={isEditModalVisible}

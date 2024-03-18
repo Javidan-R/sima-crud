@@ -5,7 +5,7 @@
       "phone": "+994775878588",
       "email": "recebli.cavidan@gmail.com",
       "age": "1990-01-01",
-      "address": "efeü",
+      "address": "efeüopj ",
       "country": "azerbaijan",
       "gender": "female",
       "id": "034c"
@@ -31,6 +31,17 @@
       "country": "turkey",
       "gender": "female",
       "id": "ad01"
+    },
+    {
+      "id": "50bd",
+      "name": "Jane",
+      "email": "jane@example.com",
+      "age": "2024-03-19",
+      "phone": "+994775878588",
+      "image": "C:\\fakepath\\Profile.svg",
+      "country": "turkey",
+      "gender": "female",
+      "address": "https://github.com/Javidan-R/sima-crud"
     }
   ]
 }
