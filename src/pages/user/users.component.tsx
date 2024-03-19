@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Table, Button, Dropdown, Menu, Modal, Skeleton } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import useLocalization from "assets/lang";
@@ -68,7 +68,7 @@ const UserComponent = () => {
     {
       title: translate("image"),
       dataIndex: "image",
-      render: (image: string) => <img src={image}    style={{ width: 50, height: 50 }} />,
+      render: (image: string) => <img src={image} alt="image"  style={{ width: 50, height: 50 }} />,
     },
     {
       title: translate("name"),

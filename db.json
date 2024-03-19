@@ -1,23 +1,12 @@
 {
   "users": [
     {
-      "id": "50bd",
-      "name": "Jane",
-      "email": "jane@example.com",
-      "age": "2024-03-19",
-      "phone": "+994775878588",
-      "image": "C:\\fakepath\\Profile.svg",
-      "country": "turkey",
-      "gender": "female",
-      "address": "https://github.com/Javidan-R/sima-crud"
-    },
-    {
       "id": "bde9",
       "name": "Cavidan Recebli",
       "email": "recebli.cavidan@gmail.com",
       "age": "2024-02-29",
       "phone": "775878588",
-      "image": "C:\\fakepath\\Promote.svg",
+      "image": "../../Codelandia/Lessons/SCSS/task/assets/images/ceo.png",
       "country": "turkey",
       "gender": "male",
       "address": "egeü"

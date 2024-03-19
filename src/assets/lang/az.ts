@@ -11,7 +11,6 @@ export const az = {
     blog_title: 'Məqalələr',
     docs_title: 'Sənədlər',
     contact_title: 'Əlaqə',
-
     // errors
     input_required: 'Bu xana mütləqdir',
     input_min_length: 'Ən azı {min} simvol olmalıdır',

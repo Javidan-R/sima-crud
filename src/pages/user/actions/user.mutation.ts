@@ -21,17 +21,19 @@ export const useDeleteUser = () => {
   
   export const useUpdateUser = () => {
     const queryClient = useQueryClient();
-    return useMutation<void, Error, IUser>({
-      mutationFn: (user: IUser) => {
-        return updateUserService(user);
+    return useMutation<void, Error, IUser>(
+      async (user: IUser) => {
+          const updatedUserData = await updateUserService(user);
+          return updatedUserData;
       },
-      onSuccess: () => {
-        queryClient.invalidateQueries('Users');
-      },
-      onError: (error: any) => {
-        console.error('Error Adding user:', error);
-      },
-    });
+      {
+        onSuccess: () => {
+          queryClient.invalidateQueries('Users');
+        },
+        onError: (error: Error) => {
+          console.error('Xəta var:', error.message);
+        },
+      }
+    );
   };
-  
   
