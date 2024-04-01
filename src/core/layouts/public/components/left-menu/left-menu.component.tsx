@@ -6,13 +6,14 @@ import {Routes} from 'router/routes';
 import {useLeftMenuStyles} from './left-menu.style';
 import classNames from 'classnames';
 import useLocalization from 'assets/lang';
+import { MenuItem } from '../../public';
 
 const LeftMenuComponent = memo(({isOpen}: { isOpen: boolean }) => {
     const classes = useLeftMenuStyles();
 
     const translate = useLocalization();
 
-    const items = [
+    const items: MenuItem[]= [
         {
             id: 1,
             name: translate('home_title'),

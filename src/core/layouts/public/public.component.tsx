@@ -18,11 +18,11 @@ const PublicComponent = () => {
     return (
         <div className={classes.public}>
             <HeaderComponent/>
-            <LeftMenuComponent isOpen={leftMenu}/>
-            <div className={publicClasses}>
+            <LeftMenuComponent isOpen={!!leftMenu} />
+                        <div className={publicClasses}>
                 <Outlet/>
             </div>
-            <FooterComponent isOpen={leftMenu}/>
+            <FooterComponent isOpen={!!leftMenu}/>
         </div>
     );
 };

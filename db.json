@@ -1,26 +1,14 @@
 {
   "users": [
     {
-      "id": "bde9",
       "name": "Cavidan Recebli",
-      "email": "recebli.cavidan@gmail.com",
-      "age": "2024-02-29",
-      "phone": "775878588",
-      "image": "../../Codelandia/Lessons/SCSS/task/assets/images/ceo.png",
-      "country": "turkey",
-      "gender": "male",
-      "address": "egeü"
-    },
-    {
-      "id": "8f62",
-      "name": "Cavidan Recebli",
+      "phone": "+994775878583",
       "email": "recebli.cavidan@gmail.com",
       "age": "2024-02-28",
-      "phone": "+994775878588",
-      "image": "C:\\fakepath\\Profile.svg",
+      "address": "üefüesfeü eüf",
       "country": "turkey",
       "gender": "female",
-      "address": "üefüesfeü eüf"
+      "id": "8f62"
     },
     {
       "name": "Cavidan Recebli",
@@ -31,6 +19,17 @@
       "country": "azerbaijan",
       "gender": "male",
       "id": "8473"
+    },
+    {
+      "id": "2df5",
+      "name": "Cavidan Recebli",
+      "email": "recebli.cavidan@gmail.COM",
+      "age": "2024-04-16",
+      "phone": "+994775878588",
+      "image": "C:\\fakepath\\Logo.svg",
+      "country": "azerbaijan",
+      "gender": "female",
+      "address": "feSDSADASDASD"
     }
   ],
   "posts": [
@@ -53,6 +52,11 @@
       "id": "045c",
       "email": "r34@gmail.com",
       "password": "1233"
+    },
+    {
+      "id": "7162",
+      "email": "wda@mail.om121",
+      "password": "1212"
     }
   ]
 }

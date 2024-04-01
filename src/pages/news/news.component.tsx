@@ -1,4 +1,4 @@
-import { useNewsStyles } from "./news.style";
+import { useNewsStyles } from './news.style';
 const NewsComponent = () => {
     const classes = useNewsStyles();
   return (

@@ -1,7 +1,6 @@
 export interface IHeadingType {
     title: string;
-    // @ts-ignore
-    add?: function;
+    add?: () => void; 
     buttonText?: string;
     noSpace?: boolean;
 }

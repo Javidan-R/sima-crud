@@ -3,7 +3,6 @@ import { environment } from './app.config';
 import { store } from 'store/store.config';
 import { setLoader } from 'store/store.reducer';
 import { errorToast, successToast } from '../shared/toast/toast';
-import { getToken } from '../helpers/get-token';
 
 const axiosInstance = axios.create({
     baseURL: environment.apiMain,

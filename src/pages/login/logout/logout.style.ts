@@ -10,6 +10,6 @@ const styles = {
             borderRadius: '5px',
         }
     },
-}
+};
 
 export const useLogOutStyles = createUseStyles(styles);

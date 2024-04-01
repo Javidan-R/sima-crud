@@ -4,7 +4,7 @@ import {useHeaderSubStyles} from './header-sub.style';
 import {LeftMenuToggle} from 'assets/images/icons/left-menu-toggle';
 import classNames from 'classnames';
 import {setLocale, toggleLeftMenu} from 'store/store.reducer';
-import {ILanguages, IState} from 'store/store';
+import { IState} from 'store/store';
 import {environment} from 'core/configs/app.config';
 import {ILang} from 'assets/lang/lang';
 import {generateGuid} from 'core/helpers/generate-guid';
@@ -44,11 +44,11 @@ const HeaderSubComponent = () => {
             </div>
             <div>
                 <select className={classes.select} name='select' id='select' onChange={changeLanguage} value={currentLang}>
-                    {
-                        languages.map((item: ILanguages) => (
-                            <option value={item.key} key={generateGuid()}>{item.value}</option>
-                        ))
-                    }
+                {
+    Array.isArray(languages) && languages.map((item: any) => (
+        <option value={item.key} key={generateGuid()}>{item.value}</option>
+    ))
+}
                 </select>
             </div>
         </div>

@@ -1,5 +1,5 @@
-import { useQueryClient, useMutation } from "react-query";
-import { deleteUserService, updateUserService } from "./users.service";
+import { useQueryClient, useMutation } from 'react-query';
+import { deleteUserService, updateUserService } from './users.service';
 
 export const useDeleteUser = () => {
     const queryClient = useQueryClient();
@@ -11,15 +11,15 @@ export const useDeleteUser = () => {
         onSuccess: () => {
           queryClient.invalidateQueries('Users');
         },
-        onError: (error: any) => {
-          console.error('Error Delete user:', error);
-        },
+        // onError: (error: Error) => {
+        //   console.error('Error Delete user:', error.message);
+        // },
       }
     );
-  };
+};
   
   
-  export const useUpdateUser = () => {
+export const useUpdateUser = () => {
     const queryClient = useQueryClient();
     return useMutation<void, Error, IUser>(
       async (user: IUser) => {
@@ -30,10 +30,9 @@ export const useDeleteUser = () => {
         onSuccess: () => {
           queryClient.invalidateQueries('Users');
         },
-        onError: (error: Error) => {
-          console.error('Xəta var:', error.message);
-        },
+        // onError: (error: Error) => {
+        //   console.error('Error:', error.message);
+        // },
       }
     );
-  };
-  
+};

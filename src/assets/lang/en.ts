@@ -67,7 +67,7 @@ export const en = {
   submit: 'Submit',
   reset: 'Reset',
   form_submit: 'Your information has been successfully submitted',
-  phone_invalid_format: "Phone number is not in the correct format. The phone number should start with +994 and be 9 digits long.",
+  phone_invalid_format: 'Phone number is not in the correct format. The phone number should start with +994 and be 9 digits long.',
 
   // Form titles
   user_info_form_title: 'User Information Form',

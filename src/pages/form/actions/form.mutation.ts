@@ -11,9 +11,6 @@ export const useForm = () => {
       onSuccess: () => {
         navigate(Routes.users);
       },
-      onError: (error: any) => {
-        console.error('Error adding user:', error);
-      },
    }
   );
 };

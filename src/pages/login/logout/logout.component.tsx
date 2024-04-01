@@ -6,8 +6,9 @@ const LogoutComponent = () => {
   const classes = useLogOutStyles();
 
   const handleLogout = () => {
-    logoutMutation.mutate();
-  };
+    const logoutMutationResult = logoutMutation();
+    logoutMutationResult.mutate();
+      };
 
   return (
       <li className={classes.logout} onClick={handleLogout}>

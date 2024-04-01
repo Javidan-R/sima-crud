@@ -1,4 +1,4 @@
-import { useHomeStyles } from "./home.style";
+import { useHomeStyles } from './home.style';
 
 const HomeComponent = () => {
     const classes = useHomeStyles();
